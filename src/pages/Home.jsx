@@ -5,9 +5,9 @@ import PokemonList from "../components/PokemonList";
 const Home = () => {
   return (
     <main>
-      {/* Navbar */}
+      {/* Navbar Component*/}
       <Navbar />
-      {/* Pokemon List */}
+      {/* Pokemon List Component*/}
       <PokemonList />
     </main>
   );

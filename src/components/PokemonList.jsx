@@ -1,12 +1,13 @@
 import React, { useContext, useEffect } from "react";
 import styled from "@emotion/styled";
-import { Box, Container, Stack } from "@mui/material";
+import { Container, Stack } from "@mui/material";
 import axios from "axios";
 import { PokeContext } from "../context/GlobalContext";
 import { Outlet, Link } from "react-router-dom";
 
+// Custom Styles -------------------------------
 const PokemonContainer = styled(Container)`
-  margin-top: 2rem;
+  padding: 4rem 0;
 `;
 
 const PokemonItem = styled(Link)`
@@ -21,6 +22,7 @@ const PokemonItem = styled(Link)`
     background-color: #ff5349;
   }
 `;
+// --------------------------------------------
 
 const API = `https://pokeapi.co/api/v2/pokemon`;
 
